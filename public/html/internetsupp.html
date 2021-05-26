@@ -1,0 +1,285 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="generator" content="Adobe GoLive 4">
+		<title>DGM Services- Internet Support</title>
+		<csscriptdict>
+			<script><!--
+CSStopExecution = false;
+CSInit = new Array;
+function CSScriptInit() {
+idxArray = new Array;
+for(var i=0;i<CSInit.length;i++)
+	idxArray[i] = i;
+CSAction2(CSInit, idxArray);
+}
+CSAg = window.navigator.userAgent; CSBVers = parseInt(CSAg.charAt(CSAg.indexOf("/")+1),10);
+function IsIE() { return CSAg.indexOf("MSIE") > 0;}
+function CSIEStyl(s) { return document.all.tags("div")[s].style; }
+function CSNSStyl(s) { return CSFindElement(s,0); }
+function CSFindElement(n,ly) { if (CSBVers < 4) return document[n];
+	var curDoc = ly ? ly.document : document; var elem = curDoc[n];
+	if (!elem) { for (var i=0;i<curDoc.layers.length;i++) {
+		elem = CSFindElement(n,curDoc.layers[i]); if (elem) return elem; }}
+	return elem;
+}
+function CSButtonReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return false; // follow link
+	else return true; // follow link
+}
+CSIm = new Object();
+function CSIShow(n,i) {
+	if (document.images) {
+		if (CSIm[n]) {
+			var img = (!IsIE()) ? CSFindElement(n,0) : document[n];
+			if (img && typeof(CSIm[n][i].src) != "undefined") {img.src = CSIm[n][i].src;}
+			if(i != 0)
+				self.status = CSIm[n][3];
+			else
+				self.status = " ";
+			return true;
+		}
+	}
+	return false;
+}
+function CSILoad(action) {
+	im = action[1];
+	if (document.images) {
+		CSIm[im] = new Object();
+		for (var i=2;i<5;i++) {
+			if (action[i] != '') { CSIm[im][i-2] = new Image(); CSIm[im][i-2].src = action[i]; }
+			else CSIm[im][i-2] = 0;
+		}
+		CSIm[im][3] = action[5];
+	}
+}
+CSStopExecution = false;
+
+function CSAction(array) { 
+	return CSAction2(CSAct, array);
+}
+function CSAction2(fct, array) { 
+	var result;
+	for (var i=0;i<array.length;i++) {
+		if(CSStopExecution) return false; 
+		var actArray = fct[array[i]];
+		var tempArray = new Array;
+		for(var j=1;j<actArray.length;j++) {
+			if((actArray[j] != null) && (typeof(actArray[j]) == "object") && (actArray[j].length == 2)) {
+				if(actArray[j][0] == "VAR") {
+					tempArray[j] = CSStateArray[actArray[j][1]];
+				}
+				else {
+					if(actArray[j][0] == "ACT") {
+						tempArray[j] = CSAction(new Array(new String(actArray[j][1])));
+					}
+				else
+					tempArray[j] = actArray[j];
+				}
+			}
+			else
+				tempArray[j] = actArray[j];
+		}			
+		result = actArray[0](tempArray);
+	}
+	return result;
+}
+CSAct = new Object;
+
+// --></script>
+		</csscriptdict>
+		<csactiondict>
+		<script><!--
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button8',/*URL*/'../graphics/Services/ServicesOff-02-01.gif',/*URL*/'../graphics/Services/ServicesOn-02-01.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button17',/*URL*/'../graphics/Services/ServicesOff-03-01.gif',/*URL*/'../graphics/Services/ServicesOn-03-01.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button18',/*URL*/'../graphics/Services/ServicesOff-04-01.gif',/*URL*/'../graphics/Services/ServicesOn-04-01.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button19',/*URL*/'../graphics/Services/ServicesOff-05-01.gif',/*URL*/'../graphics/Services/ServicesOn-05-01.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button20',/*URL*/'../graphics/Services/ServicesOff-06-01.gif',/*URL*/'../graphics/Services/ServicesOn-06-01.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button21',/*URL*/'../graphics/Services/ServicesOff-07-01.gif',/*URL*/'../graphics/Services/ServicesOn-07-01.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button22',/*URL*/'../graphics/Services/ServicesOff-08-01.gif',/*URL*/'../graphics/Services/ServicesOn-08-01.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button23',/*URL*/'../graphics/LinkBar/top/topOff-01-02.gif',/*URL*/'../graphics/LinkBar/top/topOn-01-02.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button24',/*URL*/'../graphics/LinkBar/top/topOff-01-03.gif',/*URL*/'../graphics/LinkBar/top/topOn-01-03.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button25',/*URL*/'../graphics/LinkBar/top/topOff-01-04.gif',/*URL*/'../graphics/LinkBar/top/topOn-01-04.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button26',/*URL*/'../graphics/LinkBar/top/topOff-01-05.gif',/*URL*/'../graphics/LinkBar/top/topOn-01-05.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button27',/*URL*/'../graphics/LinkBar/bottom/bottomOff-01-02.gif',/*URL*/'../graphics/LinkBar/bottom/bottomOn-01-02.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button28',/*URL*/'../graphics/LinkBar/bottom/bottomOff-01-03.gif',/*URL*/'../graphics/LinkBar/bottom/bottomOn-01-03.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button29',/*URL*/'../graphics/LinkBar/bottom/bottomOff-01-04.gif',/*URL*/'../graphics/LinkBar/bottom/bottomOn-01-04.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button30',/*URL*/'../graphics/LinkBar/bottom/bottomOff-01-05.gif',/*URL*/'../graphics/LinkBar/bottom/bottomOn-01-05.gif',/*URL*/'','');
+
+// --></script>
+		</csactiondict>
+	</head>
+
+	<body bgcolor="#2e003d" text="white" link="lime" alink="yellow" vlink="yellow" onload="CSScriptInit();">
+		<center>
+			<table border="0" cellpadding="0" cellspacing="0" width="138">
+				<tr height="70">
+					<td height="70" colspan="2">
+						<table border="0" cellpadding="0" cellspacing="0" width="594">
+							<tr>
+								<td valign="bottom"><img height="55" width="106" src="../graphics/DGMcorner.gif"></td>
+								<td width="175" valign="bottom"><img height="55" width="175" src="../graphics/Banners/quotes/blank.gif" name="quote"></td>
+								<td valign="bottom">
+									<div align="right">
+										<img height="55" width="313" src="../graphics/Banners/InternetSupport.gif"></div>
+								</td>
+							</tr>
+							<tr>
+								<td><img height="15" width="103" src="../graphics/CGblock.gif"></td>
+								<td colspan="2">
+									<div align="right">
+										<img height="16" width="417" src="../graphics/copyright.gif"></div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr height="70">
+					<td rowspan="2" valign="top">
+						<table cool width="178" height="300" border="0" cellpadding="0" cellspacing="0" gridx="16" showgridx gridy="16" showgridy>
+							<tr height="1" cntrlrow>
+								<td width="1" height="1"></td>
+								<td width="175" height="1"><spacer type="block" width="175" height="1"></td>
+							</tr>
+							<tr height="33">
+								<td width="1" height="33"><spacer type="block" width="1" height="33"></td>
+								<td width="175" height="33" colspan="1" rowspan="1" valign="top" align="left" xpos="0"><img height="33" width="175" src="../graphics/Services/Servicesoff-01-01.gif"></td>
+							</tr>
+							<tr height="35">
+								<td width="1" height="35"><spacer type="block" width="1" height="35"></td>
+								<td width="175" height="35" colspan="1" rowspan="1" valign="top" align="left" xpos="0"><csobj w="175" h="35" t="Button" ht="../graphics/Services/ServicesOn-02-01.gif"><a href="/html/imagesetting.html" onmouseover="return CSIShow(/*CMP*/'button8',1)" onmouseout="return CSIShow(/*CMP*/'button8',0)" onclick="return CSButtonReturn()"><img src="../graphics/Services/ServicesOff-02-01.gif" width="175" height="35" name="button8" border="0"></a></csobj></td>
+							</tr>
+							<tr height="31">
+								<td width="1" height="31"><spacer type="block" width="1" height="31"></td>
+								<td width="175" height="31" colspan="1" rowspan="1" valign="top" align="left" xpos="0"><csobj w="175" h="31" t="Button" ht="../graphics/Services/ServicesOn-03-01.gif"><a href="/html/drumscanning.html" onmouseover="return CSIShow(/*CMP*/'button17',1)" onmouseout="return CSIShow(/*CMP*/'button17',0)" onclick="return CSButtonReturn()"><img src="../graphics/Services/ServicesOff-03-01.gif" width="175" height="31" name="button17" border="0"></a></csobj></td>
+							</tr>
+							<tr height="30">
+								<td width="1" height="30"><spacer type="block" width="1" height="30"></td>
+								<td width="175" height="30" colspan="1" rowspan="1" valign="top" align="left" xpos="0"><csobj w="175" h="30" t="Button" ht="../graphics/Services/ServicesOn-04-01.gif"><a href="/html/colorcorrection.html" onmouseover="return CSIShow(/*CMP*/'button18',1)" onmouseout="return CSIShow(/*CMP*/'button18',0)" onclick="return CSButtonReturn()"><img src="../graphics/Services/ServicesOff-04-01.gif" width="175" height="30" name="button18" border="0"></a></csobj></td>
+							</tr>
+							<tr height="30">
+								<td width="1" height="30"><spacer type="block" width="1" height="30"></td>
+								<td width="175" height="30" colspan="1" rowspan="1" valign="top" align="left" xpos="0"><csobj w="175" h="30" t="Button" ht="../graphics/Services/ServicesOn-05-01.gif"><a href="/html/retouching.html" onmouseover="return CSIShow(/*CMP*/'button19',1)" onmouseout="return CSIShow(/*CMP*/'button19',0)" onclick="return CSButtonReturn()"><img src="../graphics/Services/ServicesOff-05-01.gif" width="175" height="30" name="button19" border="0"></a></csobj></td>
+							</tr>
+							<tr height="30">
+								<td width="1" height="30"><spacer type="block" width="1" height="30"></td>
+								<td width="175" height="30" colspan="1" rowspan="1" valign="top" align="left" xpos="0"><csobj w="175" h="30" t="Button" ht="../graphics/Services/ServicesOn-06-01.gif"><a href="/html/trapping.html" onmouseover="return CSIShow(/*CMP*/'button20',1)" onmouseout="return CSIShow(/*CMP*/'button20',0)" onclick="return CSButtonReturn()"><img src="../graphics/Services/ServicesOff-06-01.gif" width="175" height="30" name="button20" border="0"></a></csobj></td>
+							</tr>
+							<tr height="31">
+								<td width="1" height="31"><spacer type="block" width="1" height="31"></td>
+								<td width="175" height="31" colspan="1" rowspan="1" valign="top" align="left" xpos="0"><csobj w="175" h="31" t="Button" ht="../graphics/Services/ServicesOn-07-01.gif"><a href="/html/internetsupp.html" onmouseover="return CSIShow(/*CMP*/'button21',1)" onmouseout="return CSIShow(/*CMP*/'button21',0)" onclick="return CSButtonReturn()"><img src="../graphics/Services/ServicesOff-07-01.gif" width="175" height="31" name="button21" border="0"></a></csobj></td>
+							</tr>
+							<tr height="77">
+								<td width="1" height="77"><spacer type="block" width="1" height="77"></td>
+								<td width="175" height="77" colspan="1" rowspan="1" valign="top" align="left" xpos="0"><csobj w="175" h="77" t="Button" ht="../graphics/Services/ServicesOn-08-01.gif"><a href="/html/dbpub.html" onmouseover="return CSIShow(/*CMP*/'button22',1)" onmouseout="return CSIShow(/*CMP*/'button22',0)" onclick="return CSButtonReturn()"><img src="../graphics/Services/ServicesOff-08-01.gif" width="175" height="77" name="button22" border="0"></a></csobj></td>
+							</tr>
+						</table>
+					</td>
+					<td height="70">
+						<table border="0" cellpadding="0" cellspacing="0" width="417">
+							<tr>
+								<td width="75"><img height="36" width="75" src="../graphics/LinkBar/top/topOff-01-01.gif"></td>
+								<td><csobj w="48" h="36" t="Button" ht="../graphics/LinkBar/top/topOn-01-02.gif"><a href="home.html" onmouseover="return CSIShow(/*CMP*/'button23',1)" onmouseout="return CSIShow(/*CMP*/'button23',0)" onclick="return CSButtonReturn()"><img src="../graphics/LinkBar/top/topOff-01-02.gif" width="48" height="36" name="button23" border="0"></a></csobj></td>
+								<td><csobj w="77" h="36" t="Button" ht="../graphics/LinkBar/top/topOn-01-03.gif"><a href="services.html" onmouseover="return CSIShow(/*CMP*/'button24',1)" onmouseout="return CSIShow(/*CMP*/'button24',0)" onclick="return CSButtonReturn()"><img src="../graphics/LinkBar/top/topOff-01-03.gif" width="77" height="36" name="button24" border="0"></a></csobj></td>
+								<td><csobj w="67" h="36" t="Button" ht="../graphics/LinkBar/top/topOn-01-04.gif"><a href="clients.html" onmouseover="return CSIShow(/*CMP*/'button25',1)" onmouseout="return CSIShow(/*CMP*/'button25',0)" onclick="return CSButtonReturn()"><img src="../graphics/LinkBar/top/topOff-01-04.gif" width="67" height="36" name="button25" border="0"></a></csobj></td>
+								<td><csobj w="85" h="36" t="Button" ht="../graphics/LinkBar/top/topOn-01-05.gif"><a href="filePrep.html" onmouseover="return CSIShow(/*CMP*/'button26',1)" onmouseout="return CSIShow(/*CMP*/'button26',0)" onclick="return CSButtonReturn()"><img src="../graphics/LinkBar/top/topOff-01-05.gif" width="85" height="36" name="button26" border="0"></a></csobj></td>
+								<td><img height="36" width="65" src="../graphics/LinkBar/top/topOff-01-06.gif"></td>
+							</tr>
+						</table>
+						<table border="0" cellpadding="0" cellspacing="0" width="389">
+							<tr>
+								<td><img height="34" width="56" src="../graphics/LinkBar/bottom/bottomOff-01-01.gif"></td>
+								<td><csobj w="92" h="34" t="Button" ht="../graphics/LinkBar/bottom/bottomOn-01-02.gif"><a href="downloads.html" onmouseover="return CSIShow(/*CMP*/'button27',1)" onmouseout="return CSIShow(/*CMP*/'button27',0)" onclick="return CSButtonReturn()"><img src="../graphics/LinkBar/bottom/bottomOff-01-02.gif" width="92" height="34" name="button27" border="0"></a></csobj></td>
+								<td><csobj w="52" h="34" t="Button" ht="../graphics/LinkBar/bottom/bottomOn-01-03.gif"><a href="links.html" onmouseover="return CSIShow(/*CMP*/'button28',1)" onmouseout="return CSIShow(/*CMP*/'button28',0)" onclick="return CSButtonReturn()"><img src="../graphics/LinkBar/bottom/bottomOff-01-03.gif" width="52" height="34" name="button28" border="0"></a></csobj></td>
+								<td><csobj w="73" h="34" t="Button" ht="../graphics/LinkBar/bottom/bottomOn-01-04.gif"><a href="contact.html" onmouseover="return CSIShow(/*CMP*/'button29',1)" onmouseout="return CSIShow(/*CMP*/'button29',0)" onclick="return CSButtonReturn()"><img src="../graphics/LinkBar/bottom/bottomOff-01-04.gif" width="73" height="34" name="button29" border="0"></a></csobj></td>
+								<td><csobj w="91" h="34" t="Button" ht="../graphics/LinkBar/bottom/bottomOn-01-05.gif"><a href="personnel.html" onmouseover="return CSIShow(/*CMP*/'button30',1)" onmouseout="return CSIShow(/*CMP*/'button30',0)" onclick="return CSButtonReturn()"><img src="../graphics/LinkBar/bottom/bottomOff-01-05.gif" width="91" height="34" name="button30" border="0"></a></csobj></td>
+								<td><img height="34" width="53" src="../graphics/LinkBar/bottom/bottomOff-01-06.gif"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div align="right">
+							<table cool width="418" height="597" border="0" cellpadding="0" cellspacing="0" gridx="16" gridy="16" bgcolor="black">
+								<tr height="1" cntrlrow>
+									<td width="1" height="1"><spacer type="block" width="1" height="1"></td>
+									<td width="4" height="1"><spacer type="block" width="4" height="1"></td>
+									<td width="407" height="1"><spacer type="block" width="407" height="1"></td>
+									<td width="4" height="1"><spacer type="block" width="4" height="1"></td>
+								</tr>
+								<tr height="11">
+									<td width="1" height="11"><spacer type="block" width="1" height="11"></td>
+									<td width="4" height="11"><spacer type="block" width="4" height="11"></td>
+									<td width="407" height="11"><spacer type="block" width="407" height="11"></td>
+									<td width="4" height="11"><spacer type="block" width="4" height="11"></td>
+								</tr>
+								<tr height="583">
+									<td width="1" height="583"><spacer type="block" width="1" height="583"></td>
+									<td width="4" height="583"><spacer type="block" width="4" height="583"></td>
+									<td width="407" height="583" colspan="1" rowspan="1" valign="top" align="left" xpos="4" content csheight="583"><tt><b>WEBSITE DESIGN AND HOSTING:</b></tt>
+										<ul>
+											<p><tt>From concept to hosting. We can register and host your domain name (including email addresses and FTP), design your website layout, create the graphics, do the photography (whether a tour of your work site or product shots), and create the pages. Programming services are available for specialized e-commerce or interactive forms.<br>
+											<br>
+											Why would you want your own domain name for your website?<br>
+											<br>
+											You look substantial and impressive by having your own domain name. Having your own domain name as opposed to linking to somebody else's domain makes you look like a large company. Doesn't myname.com sound more impressive than members.aol.com/myname?<br>
+											<br>
+											Make the statement that you're making a true commitment to the World Wide Web by having your own domain name<br>
+											<br>
+											You level the playing field against larger companies by having your own domain name. Your company sounds like a first-class operation<br>
+											<br>
+											What should you think about when picking a name?<br>
+											<br>
+											Select a domain name unique to your company (for example, www.yourname.com)<br>
+											<br>
+											Try to choose a name for your domain name that suggests your company name or your type of business. This also makes it easier for people to remember your Web site address<br>
+											<br>
+											When deciding on a name, pick a few domain names that would be acceptable to you. Because of the huge number of websites launched every day, you may not be able to register your first choice. All of the three letter combinations are already gone<br>
+											<br>
+											DGM can conduct a search for you to determine whether the domain name you would like is still available<br>
+											<br>
+											We can register your domain name for you. When you pay the annual registration fee, that domain name is yours. We can have your site hosted for you, but if you change your hosting service, you don't need to change your domain name. It stays with you as long as you pay the registration fee.<br>
+											<br>
+											</tt>
+										</ul>
+									</td>
+									<td width="4" height="583"><spacer type="block" width="4" height="583"></td>
+								</tr>
+							</table>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" valign="top"><img height="50" width="594" src="../graphics/address.gif"></td>
+				</tr>
+				<tr>
+					<td colspan="2" valign="top">
+						<center>
+							<table cool width="593" height="61" border="0" cellpadding="0" cellspacing="0" gridx="16" showgridx usegridx gridy="16" showgridy usegridy>
+								<tr height="1" cntrlrow>
+									<td width="1" height="1"></td>
+									<td width="590" height="1"><spacer type="block" width="590" height="1"></td>
+								</tr>
+								<tr height="58">
+									<td width="1" height="58"><spacer type="block" width="1" height="58"></td>
+									<td width="590" height="58" colspan="1" rowspan="1" valign="top" align="left" xpos="0" content csheight="58">
+										<center>
+											[ <a href="home.html">Home</a> | <a href="services.html">Services</a> | <a href="clients.html">Clients</a> | <a href="filePrep.html">FilePrep</a> | <a href="downloads.html">Downloads</a> | <a href="links.html">Links</a> | <a href="contact.html">Contact</a> | <a href="personnel.html">Personnel</a> ]
+											<p>[<a href="imagesetting.html"> Imagesetting</a> | <a href="drumscanning.html">Drum Scanning</a> | <a href="colorcorrection.html">Color Correction</a> ]<br>
+											[ <a href="retouching.html">Retouching</a> | <a href="trapping.html">Trapping</a> | <a href="internetsupp.html">Internet Support</a> | <a href="dbpub.html">Database Publishing</a> ]</center>
+									</td>
+								</tr>
+							</table>
+						</center>
+					</td>
+				</tr>
+			</table>
+		</center>
+	</body>
+
+</html>
